@@ -1,4 +1,17 @@
 # Assignment 01, Task 2
+a) What directory/folder do you start in when you log in to Euler? Give the full path to the directory.
  a) To check in which directory you are currently working the commando "pwd" or "print working directory" should be used. The directory that you start in when logging into Euler is the users Home Directory. In my specific case it was /srv/home/gbettenhausen.
 
  b) Checking which shell you are using can be done through the "ps" or "print shell". When logging in the shell that is running is BASH or the "Bourne Again Shell"
+
+
+b) What shell is running when you log in? (Use this resource: https://www.learnshell.org/)
+
+
+c) Identify two flags (other than -l, -r, -t) that can be passed to the ls command. Explain what the flags do.
+
+
+d) How many lines of text are in the file /proc/cpuinfo?
+
+
+e) Using the module command, determine the highest available version of GCC on Euler.
