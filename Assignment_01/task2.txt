@@ -11,6 +11,8 @@ Checking which shell you are using can be done through the "ps" or "print shell"
 
 c) Identify two flags (other than -l, -r, -t) that can be passed to the ls command. Explain what the flags do.
 
+-a : Also return files starting with '.'
+-d : List the names of the directories along with the other files rather than their content
 
 d) How many lines of text are in the file /proc/cpuinfo?
 
