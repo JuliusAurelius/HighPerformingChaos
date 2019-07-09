@@ -1,1 +1,4 @@
 # Assignment 01, Task 2
+ a) To check in which directory you are currently working the commando "pwd" or "print working directory" should be used. The directory that you start in when logging into Euler is the users Home Directory. In my specific case it was /srv/home/gbettenhausen.
+
+ b) Checking which shell you are using can be done through the "ps" or "print shell". When logging in the shell that is running is BASH or the "Bourne Again Shell"
