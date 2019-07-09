@@ -15,6 +15,8 @@ c) Identify two flags (other than -l, -r, -t) that can be passed to the ls comma
 -d : List the names of the directories along with the other files rather than their content
 
 d) How many lines of text are in the file /proc/cpuinfo?
-
+There are 2101 lines in /proc/cpuinfo, read by unsing 'info cpuinfo'.
+To get there, use 'cd ..' until the highest level is reached and then access /proc
 
 e) Using the module command, determine the highest available version of GCC on Euler.
+// no solution found yet; 'module whatis gcc' does not return an answer
