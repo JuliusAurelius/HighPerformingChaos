@@ -1,0 +1,33 @@
+# Assignment 01, Task 3
+Choose either vim or nano as text editors on Euler and answer the following in the file task3.txt
+
+a) Which editor did you choose?
+
+nano
+
+b) What command(s) would you use to save a file and exit the editor?
+
+^X Close the current file buffer/ exit from nano
+or F2
+
+It is important to know how to enter the (^) symbol. There are two options either by Ctrl-key or by entering twice Esc
+
+^O Write the current file to disc
+
+or bei entering exit the system will ask "Save modified buffer(Answering "No" will destroy changes)?" you can choose between Yes (Y) or No (N)exit
+
+c) What command(s)/process would you use to (i) paste a section of text (ii) copy a line of text (iii) search the file for a word (if possible).
+
+(i) paste
+
+^U uncut from cutbuffer into the current line (F10)
+^R insert a file into the current one or (F5)
+
+(ii) copy
+
+^K cut the current line and store it in the cutbuffer (F9)
+-M^ Copy the current line and store it in the cutbuffer or (M-6)
+
+(iii)
+
+^W is searching for a string or a expression or (F6)
