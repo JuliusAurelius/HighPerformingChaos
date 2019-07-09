@@ -1,1 +1,14 @@
 # Assignment 01, Task 2
+a) What directory/folder do you start in when you log in to Euler? Give the full path to the directory.
+
+
+b) What shell is running when you log in? (Use this resource: https://www.learnshell.org/)
+
+
+c) Identify two flags (other than -l, -r, -t) that can be passed to the ls command. Explain what the flags do.
+
+
+d) How many lines of text are in the file /proc/cpuinfo?
+
+
+e) Using the module command, determine the highest available version of GCC on Euler.
