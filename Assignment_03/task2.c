@@ -1,55 +1,72 @@
 //
-// Created by Georg K. Bettenhausen on 2019-07-12.
+// Created by Marcus Becker on 2019-07-16.
 //
 
-#include <time.h>
-#include <stdlib.h>
-#include <math.h>
 #include "output.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
 
-int main()
+void populate_b(float *b);
+
+int main(int argc, char* argv[])
 {
+    // Prepare the timer
     clock_t start, end;
     double cpu_time_used;
 
+    // _________________________ Start clock _________________________
     start = clock();
 
-    double *A = malloc(1000000 * sizeof(double));
-    float *b = malloc(1000 * sizeof(float));
-
-    randomT2(A);
-
-    for(int i = 0; i < 1000; i++) {
-        if (i % 2 == 0)
-            b[i] = 0.5f;
-        else
-            b[i] = -0.5f;
-    }
-
-    double *c = malloc(1000 * sizeof(double));
-
-    for(int i = 0; i < 1000; i++) {
-        double sumPerRow = 0;
-        for (int j = 0; j < 1000; j++) {
-            sumPerRow += A[1000*i + j] * b[j];
-        }
-
-        c[i] = sumPerRow;
-    }
-
+    // Create pointers to A and b
+    double *A;
+    float *b;
+    double *c;
     double normOfC = 0;
-    for(int i = 0; i < 1000; i++)
-    {
+
+    // Allocate memory for A and b
+    A = (double *)malloc(1000 * 1000 * sizeof(double));
+    b = (float *)malloc(1000 * sizeof(float));
+    c = (double *)malloc(1000 * sizeof(double));
+
+    // Populate A and b
+    randomT2(A);
+    populate_b(b);
+
+    // Go through each row
+    for (int i = 0; i<1000; i++){
+        // Make sure nothing is stored already
+        c[i] = 0;
+        for (int ii = 0; ii<1000; ii++){
+            // Sum whole row
+            c[i] += A[i * 1000 + ii] * b[ii];
+        }
+        // Add value to the norm
         normOfC += pow(c[i],2);
     }
 
+    // Finish calculation of the norm by calculating the square root
     normOfC = sqrt(normOfC);
 
-
+    // _________________________ Stop clock __________________________
     end = clock();
-
-    cpu_time_used = (double) end-start/CLOCKS_PER_SEC;
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 
     outputT2(normOfC, cpu_time_used);
+
+    // Free memory of A and b
+    free(A);
+    free(b);
+    free(c);
+}
+
+
+void populate_b(float *b)
+{
+    for(int i = 0; i<1000; i++)
+    {
+        b[i] = (float)(i%2) - 0.5f;
+    }
 
 }
