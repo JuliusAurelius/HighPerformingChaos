@@ -1,0 +1,20 @@
+Task 4.
+In one or two sentences, highlight what the following types of testing try to accomplish:
+
+1) Unit Testing:
+Unit Testing is the Lowest form of Testing and is used to test single units of the software. A unit of software is in todays standards usually considered to be a simpdle method with one or two inputs and a single output, thus making unit testing an essential tool for checking if the code functions at its most basic level.
+
+2) Integration Testing:
+Integration Testing as the name suggests is used to test the integration between different units and to ensure that they function as a group through exposing faults in the interactions between the single units.
+
+3) Functional Testing:
+Functional Testing is used to ensure that the software meets the requirements of the application. This is done by whats called Black Box Testing in which one doesn't concern themselves with how the software processes the inputs, but only if the corresponding output is correct.
+
+4) End-to-end Testing:
+End-to-end testing is a method of testing that concerns itself with testing the application from start to finish, thereby identifiying system dependencies and ensuring that the right information is passed between various components of the sytem and potentially even multiple systems. This is normally done by testing the application in real world case scenarios.
+
+5) Performance Testing: 
+Performance Testing as the name implies is used for measuring the various components of performance for an application this may include but is not limited to: the speed(bandwith, processing speed, workload efficiency, etc.), responsiveness and stability under a workload. This is most times done with workloads differing in size and complexity, but most importantly should test best and worst case secenarios.
+
+6) Usability Testing:
+ 
