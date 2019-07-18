@@ -1,0 +1,26 @@
+Task 3
+
+a) What is the size of variable p on Euler?
+Command: print sizeof(p)
+8 Bytes
+
+b) What is the address of p?
+Command: print &p
+(int **) 0x7fffffffdda8
+
+c) What is the address of c?
+Command: print &c
+0x7fffffffdda7 ""
+
+d) What is the value of arr[0] after the assignment on line 16?
+Command: next
+Command: print arr[0]
+4195616
+
+e) What is the value of arr[0] at the end of the program?
+Command: next
+Command: print arr[0]
+266
+
+f) Explain why the value of arr[0] changes.
+with casting the int pointer p to a char pointer and accessing the next element in the assumed array in the memory is accessed which is arr. This way arr[0] gets assigned to (char)1 
