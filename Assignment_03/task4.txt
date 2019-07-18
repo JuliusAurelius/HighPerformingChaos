@@ -17,4 +17,10 @@ End-to-end testing is a method of testing that concerns itself with testing the 
 Performance Testing as the name implies is used for measuring the various components of performance for an application this may include but is not limited to: the speed(bandwith, processing speed, workload efficiency, etc.), responsiveness and stability under a workload. This is most times done with workloads differing in size and complexity, but most importantly should test best and worst case secenarios.
 
 6) Usability Testing:
- 
+Usability Testing is where most likely for the first time in the Software production cycle outside users are introduced, it is used for testing user-centered-interaction with the Application. This form of testing is seen as irreplacable in the testing-cycle of a product as it can give direct input on how the real enduser uses the Application.
+
+7) Acceptance Testing:
+Acceptance Testing is used to evaluate whether or not your piece of Software is in compliance with the business requirements set forth in the contraft for it, and thus whether or not it is acceptable for delivery.
+
+8) Beta Testing
+Beta Testing is usually the last test conducted before releasing the full Software to everyone. It involves giving the software that has passed all the previous tests to a handful of people who usually have no affiliation with the product for them to test it in day to day usage and report found bugs as well as an issues they discovered, and usually write a small report with feedback on what they liked and didn't like in the software. 
