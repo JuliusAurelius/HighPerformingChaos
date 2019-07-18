@@ -1,0 +1,7 @@
+Task 5.
+
+task2 ran in 10 tests with an average of 0.014833ms.
+task5 ran in 10 tests with an average of 0.016105ms.
+(measured on my laptop)
+
+The difference is the way of accessing the array; task2 goes through the rows and therefore in consecutive order through the array stored in the memory. This is the fasterst way to access memory. task5 jumps between the memory entries, forcing the CPU more often to access entries which are stored in the slower party of the memory.

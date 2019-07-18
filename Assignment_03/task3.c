@@ -18,6 +18,6 @@ int main(){
     p[0] = d;
 
     *((char *)p + 1) = c;
-    
+
     return 0;
 }
